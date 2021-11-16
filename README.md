@@ -13,7 +13,7 @@ npm run doc-markdown
 
 
 ## Without the plugin
-```https://en.wikipedia.org/wiki/Polaroid_Corporation#cite_note-boston-history-polaroid-1
+```
 Returns Promise<{ data: string; id: string }>
 ```
 
