@@ -1,0 +1,10 @@
+# IDE related files
+/.idea
+/.vscode
+
+/docs
+
+
+# dependencies
+/node_modules
+

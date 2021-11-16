@@ -1,0 +1,15 @@
+{
+    "name": "promise-returning-object",
+    "type": "module",
+    "dependencies": {
+        "typescript": "^4.4.4",
+        "typedoc": "^0.22.8"
+    },
+    "devDependencies": {
+        "typedoc-plugin-markdown": "^3.11.6"
+    },
+    "scripts": {
+        "doc-markdown": " typedoc index.ts --out docs",
+        "doc-html": " typedoc index.ts --out docs --plugin none"
+    }
+}
