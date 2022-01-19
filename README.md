@@ -1,24 +1,35 @@
-# Repro code for typedoc-plugin-markdown#268
+# Repro code for typedoc-plugin-markdown#286
 
-The issue is abouts documenting promises that return object.
-The function `getUser` resolves in an object described inline. 
-Without the plugin, the returned object is fully described. With the plugin, the documentation is limited to `Object`.
+The issue is about escaping the `|` char.
+Escaping works fine in arguments description, but not in type descriptions.
 
-## Generate docs
-To generate the documentation, use one of the two following commands
+
+## Generate documentation
+To generate the documentation, use:
 ```
-npm run doc-html
 npm run doc-markdown
 ```
 
+## Using VuePress for a nice render
+```
+npm run vuepress
+```
 
-## Without the plugin
-```
-Returns Promise<{ data: string; id: string }>
-```
+Once vuepress has finish building, doc can be accessed here:
+- Module: `http://localhost:8080/modules.html`
+- Interface: `http://localhost:8080/interfaces/demoInterface.html`
 
 
-## With typedoc-plugin-markdown plugin
-```
-`Promise`<`Object`\>
-```
+## Result
+
+### Type description
+The description of `dataIDs` is not fully rendered.
+
+![img.png](img.png)
+
+
+
+### Argument description
+Everything is fine here.
+
+![img_1.png](img_1.png)

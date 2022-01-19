@@ -2,14 +2,15 @@
     "name": "promise-returning-object",
     "type": "module",
     "dependencies": {
-        "typescript": "^4.4.4",
-        "typedoc": "^0.22.8"
+        "typedoc": "^0.22.8",
+        "typescript": "^4.4.4"
     },
     "devDependencies": {
-        "typedoc-plugin-markdown": "^3.11.6"
+        "typedoc-plugin-markdown": "^3.11.6",
+        "vuepress": "^1.9.7"
     },
     "scripts": {
-        "doc-markdown": " typedoc index.ts --out docs",
-        "doc-html": " typedoc index.ts --out docs --plugin none"
+        "doc-markdown": "typedoc index.ts --out docs",
+        "vuepress": "vuepress dev docs"
     }
 }
